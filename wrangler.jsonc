@@ -1,0 +1,39 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "realstay-inappnotificationservice",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-04-06",
+	"vars": {
+		"BACKEND_URL": "https://realstay-api-staging.edgetechino.com"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "fcm-tokens",
+			"database_id": "f8c9c1b9-ae06-4253-838a-9d7753e03320",
+			"migrations_dir": "./drizzle"
+		}
+	]
+	// "compatibility_flags": [
+	//   "nodejs_compat"
+	// ],
+	// "kv_namespaces": [
+	//   {
+	//     "binding": "MY_KV_NAMESPACE",
+	//     "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+	//   }
+	// ],
+	// "r2_buckets": [
+	//   {
+	//     "binding": "MY_BUCKET",
+	//     "bucket_name": "my-bucket"
+	//   }
+	// ],
+	// "ai": {
+	//   "binding": "AI"
+	// },
+	// "observability": {
+	//   "enabled": true,
+	//   "head_sampling_rate": 1
+	// }
+}
